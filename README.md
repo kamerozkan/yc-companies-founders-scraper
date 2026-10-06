@@ -204,6 +204,20 @@ Send extracted data straight to your custom API or webhook endpoint upon run com
 
 ---
 
+## Automated Weekly Schedule (Recurring Retention Recipe)
+
+Do not run scrapers manually every time Y Combinator updates. Set up an automated weekly schedule to keep your pipeline continuously refreshed with newly funded startups and founders:
+
+1. **Open the Schedules Tab**: In your Apify Console, navigate to **Schedules** > **Create new schedule**.
+2. **Set Cron Expression**: Choose **Every Monday at 08:00 UTC** (`0 8 * * 1`) to receive fresh deals at the start of every business week.
+3. **Select Actor**: Choose `kamerozkan/yc-companies-founders-scraper` and configure your target criteria (e.g. `status: "Active"`, `isHiring: true`, `outputMode: "companies"`).
+4. **Auto-Sync to Google Sheets / CRM**: Under the Actor's **Integrations** tab, select **Google Sheets** (or webhook to HubSpot/Salesforce). New weekly records will automatically append to your live spreadsheet.
+5. **Team Alerts**: Connect Slack integration to ping your `#dealflow` or `#sales-leads` channel every Monday morning with the newly extracted startups.
+
+This automated recipe transforms one-off data exports into a continuous, hands-off dealflow engine for your investment or sales team.
+
+---
+
 ## Pay-Per-Event Pricing Value Proposition
 
 | Feature | Legacy Scrapers / Directories | This Apify Actor |
