@@ -1,7 +1,12 @@
 # Y Combinator Scraper & Startup Leads API (Companies & Founders)
 
+<p align="center">
+  <img src="https://apify-image-uploads-prod.s3.us-east-1.amazonaws.com/IgeKo3nNKdc47C5AT-actor-wHFYMA8uTMrmdhjfK-ZBHM8lvgoh-Y_Combinator_logo.svg.png" width="128" height="128" alt="Y Combinator Logo" style="border-radius: 24px;" />
+</p>
+
 [![Run on Apify](https://apify.com/actor-badge?actor=kamerozkan/yc-companies-founders-scraper)](https://apify.com/kamerozkan/yc-companies-founders-scraper)
 [![Apify Actor](https://img.shields.io/badge/Apify-Actor-blue.svg)](https://apify.com/kamerozkan/yc-companies-founders-scraper)
+
 [![Pricing](https://img.shields.io/badge/Pricing-$0.003%20/%20record-green.svg)](https://apify.com/kamerozkan/yc-companies-founders-scraper)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg)](https://apify.com/kamerozkan/yc-companies-founders-scraper)
 
