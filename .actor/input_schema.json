@@ -1,0 +1,77 @@
+{
+    "title": "Y Combinator Companies & Founders Scraper Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "outputMode": {
+            "type": "string",
+            "title": "Output Mode",
+            "description": "Choose whether to extract company profiles, founder profiles, or both.",
+            "enum": ["companies", "founders", "both"],
+            "enumTitles": ["Companies (Default)", "Founders", "Both"],
+            "default": "companies"
+        },
+        "searchQuery": {
+            "type": "string",
+            "title": "Search Query",
+            "description": "Keyword search across company names, one-liners, and descriptions (e.g. 'artificial intelligence', 'compliance'). Leave empty for all.",
+            "default": "",
+            "editor": "textfield"
+        },
+        "batches": {
+            "type": "array",
+            "title": "YC Batches",
+            "description": "Filter by specific YC batches (e.g. ['Winter 2026', 'Summer 2025']). Leave empty for all batches.",
+            "default": [],
+            "items": {
+                "type": "string"
+            },
+            "editor": "stringList"
+        },
+        "industries": {
+            "type": "array",
+            "title": "Industries",
+            "description": "Filter by industry (e.g. ['B2B', 'Fintech', 'Healthcare', 'Consumer', 'Industrials', 'Education']). Leave empty for all.",
+            "default": [],
+            "items": {
+                "type": "string"
+            },
+            "editor": "stringList"
+        },
+        "status": {
+            "type": "string",
+            "title": "Company Status",
+            "description": "Filter by company operational status.",
+            "enum": ["all", "Active", "Acquired", "Inactive", "Public"],
+            "enumTitles": ["All Statuses", "Active", "Acquired", "Inactive", "Public"],
+            "default": "all"
+        },
+        "isHiring": {
+            "type": "boolean",
+            "title": "Only Companies Hiring",
+            "description": "Filter to only companies that currently have open job positions.",
+            "default": false
+        },
+        "topCompanyOnly": {
+            "type": "boolean",
+            "title": "Only Top YC Companies",
+            "description": "Filter to only Y Combinator top valued companies (e.g. Airbnb, Stripe, Coinbase, DoorDash).",
+            "default": false
+        },
+        "includeDeepDetails": {
+            "type": "boolean",
+            "title": "Fetch Deep Details",
+            "description": "Enrich companies with direct founder LinkedIn and social profiles, founder bios, and company social handles.",
+            "default": true
+        },
+        "maxItems": {
+            "type": "integer",
+            "title": "Maximum Items",
+            "description": "Maximum number of records to return. For zero-config trial runs, defaults to 50.",
+            "default": 50,
+            "minimum": 1,
+            "maximum": 10000
+        }
+    },
+    "required": []
+}

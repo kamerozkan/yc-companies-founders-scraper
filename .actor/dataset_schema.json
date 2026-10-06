@@ -1,0 +1,129 @@
+{
+    "actorSpecification": 1,
+    "views": {
+        "companies": {
+            "title": "YC Companies",
+            "transformation": {
+                "fields": [
+                    "small_logo_thumb_url",
+                    "name",
+                    "batch",
+                    "status",
+                    "industry",
+                    "website",
+                    "one_liner",
+                    "team_size",
+                    "location",
+                    "linkedin_url",
+                    "top_company",
+                    "isHiring"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "small_logo_thumb_url": {
+                        "label": "Logo",
+                        "format": "image"
+                    },
+                    "name": {
+                        "label": "Company",
+                        "format": "text"
+                    },
+                    "batch": {
+                        "label": "Batch",
+                        "format": "text"
+                    },
+                    "status": {
+                        "label": "Status",
+                        "format": "text"
+                    },
+                    "industry": {
+                        "label": "Industry",
+                        "format": "text"
+                    },
+                    "website": {
+                        "label": "Website",
+                        "format": "link"
+                    },
+                    "one_liner": {
+                        "label": "One Liner",
+                        "format": "text"
+                    },
+                    "team_size": {
+                        "label": "Team Size",
+                        "format": "number"
+                    },
+                    "location": {
+                        "label": "Location",
+                        "format": "text"
+                    },
+                    "linkedin_url": {
+                        "label": "LinkedIn",
+                        "format": "link"
+                    },
+                    "top_company": {
+                        "label": "Top Company",
+                        "format": "boolean"
+                    },
+                    "isHiring": {
+                        "label": "Hiring",
+                        "format": "boolean"
+                    }
+                }
+            }
+        },
+        "founders": {
+            "title": "YC Founders",
+            "transformation": {
+                "fields": [
+                    "avatar_thumb",
+                    "full_name",
+                    "current_company",
+                    "current_title",
+                    "batches",
+                    "linkedin_url",
+                    "twitter_url",
+                    "top_company"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "avatar_thumb": {
+                        "label": "Avatar",
+                        "format": "image"
+                    },
+                    "full_name": {
+                        "label": "Founder",
+                        "format": "text"
+                    },
+                    "current_company": {
+                        "label": "Company",
+                        "format": "text"
+                    },
+                    "current_title": {
+                        "label": "Role",
+                        "format": "text"
+                    },
+                    "batches": {
+                        "label": "Batches",
+                        "format": "text"
+                    },
+                    "linkedin_url": {
+                        "label": "LinkedIn",
+                        "format": "link"
+                    },
+                    "twitter_url": {
+                        "label": "Twitter",
+                        "format": "link"
+                    },
+                    "top_company": {
+                        "label": "Top Company",
+                        "format": "boolean"
+                    }
+                }
+            }
+        }
+    }
+}

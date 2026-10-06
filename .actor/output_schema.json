@@ -1,0 +1,13 @@
+{
+    "actorOutputSchemaVersion": 1,
+    "title": "YC Companies & Founders Output",
+    "description": "Structured dataset of Y Combinator companies and founders.",
+    "properties": {
+        "results": {
+            "type": "string",
+            "title": "YC Directory Dataset",
+            "description": "Default dataset containing extracted company and founder profiles.",
+            "template": "{{links.apiDefaultDatasetUrl}}/items"
+        }
+    }
+}
