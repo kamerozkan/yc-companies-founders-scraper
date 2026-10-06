@@ -1,8 +1,6 @@
 # Y Combinator Scraper & Startup Leads API (Companies & Founders)
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/kamerozkan/yc-companies-founders-scraper/main/logo.png" width="240" alt="Y Combinator Scraper Logo" />
-</p>
+
 
 
 [![Run on Apify](https://apify.com/actor-badge?actor=kamerozkan/yc-companies-founders-scraper)](https://apify.com/kamerozkan/yc-companies-founders-scraper)
