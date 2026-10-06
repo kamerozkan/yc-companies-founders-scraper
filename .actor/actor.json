@@ -1,8 +1,8 @@
 {
     "actorSpecification": 1,
     "name": "yc-companies-founders-scraper",
-    "title": "Y Combinator Companies & Founders Scraper",
-    "description": "Ultra-fast, browserless Y Combinator scraper. Extract company profiles, tech tags, team metrics, hiring status, and founder LinkedIn profiles directly via official APIs.",
+    "title": "Y Combinator Scraper & Startup Leads API (Companies & Founders)",
+    "description": "Scrape all 6,270+ Y Combinator companies, 13,900+ founder LinkedIn profiles, hiring signals, and tech stacks. Fast official API, zero proxy fees, $0.003/record.",
     "version": "1.0",
     "buildTag": "latest",
     "defaultMemoryMbytes": 256,

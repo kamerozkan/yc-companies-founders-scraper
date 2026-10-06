@@ -8,10 +8,10 @@ sys.path.insert(0, "/Users/kamerozkan/.gemini/antigravity/scratch/apify-operator
 from apify import call, data, get
 
 ACTOR_NAME = "yc-companies-founders-scraper"
-ACTOR_TITLE = "Y Combinator Companies & Founders Scraper"
+ACTOR_TITLE = "Y Combinator Scraper & Startup Leads API (Companies & Founders)"
 ACTOR_DESCRIPTION = (
-    "Ultra-fast, browserless Y Combinator scraper. Extract company profiles, tech tags, "
-    "team metrics, hiring signals, and founder LinkedIn profiles directly via official APIs."
+    "Scrape all 6,270+ Y Combinator companies, 13,900+ founder LinkedIn profiles, hiring signals, "
+    "and tech stacks. Fast official API, zero proxy fees, $0.003/record."
 )
 PROJECT_DIR = "/Users/kamerozkan/.gemini/antigravity/scratch/yc-companies-founders-scraper"
 
@@ -20,6 +20,8 @@ def collect_source_files():
     files = []
     ignored = {"deploy_and_test.py", ".DS_Store", "test_run.py"}
     for root, _, filenames in os.walk(PROJECT_DIR):
+        if ".git" in root or "__pycache__" in root:
+            continue
         for fname in sorted(filenames):
             if fname in ignored or fname.endswith(".pyc"):
                 continue
